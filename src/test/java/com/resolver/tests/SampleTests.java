@@ -11,6 +11,8 @@ public class SampleTests extends BaseTest {
 	@Test(priority = 1, retryAnalyzer = Retry.class)
 	public void TestOne() {
 
+		softAssert = new SoftAssert(); 
+		
 		// Assert that email address input is present
 		softAssert.assertEquals(homePage.emailInputIsVisible(), true, "Email input not present.");
 

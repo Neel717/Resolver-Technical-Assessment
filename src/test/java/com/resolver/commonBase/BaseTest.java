@@ -23,7 +23,7 @@ public class BaseTest {
 	
 	public WebDriver driver;
 	public HomePage homePage;
-	public SoftAssert softAssert = new SoftAssert();
+	public SoftAssert softAssert;
 	
 	public WebDriver initializeDriver() throws IOException {
 		// properties class
