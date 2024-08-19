@@ -1,6 +1,5 @@
 package com.resolver.tests;
 
-
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -12,8 +11,8 @@ public class SampleTests extends BaseTest {
 	@Test(priority = 1, retryAnalyzer = Retry.class)
 	public void TestOne() {
 
-		softAssert = new SoftAssert(); 
-		
+		softAssert = new SoftAssert();
+
 		// Assert that email address input is present
 		softAssert.assertEquals(homePage.emailInputIsVisible(), true, "Email input not present.");
 
@@ -22,10 +21,10 @@ public class SampleTests extends BaseTest {
 
 		// Assert that Sign in button is present
 		softAssert.assertEquals(homePage.loginBtnIsVisible(), true, "Sign in Button not present.");
-		
-		//Enter in an email address and password combination into the respective fields
+
+		// Enter in an email address and password combination into the respective fields
 		homePage.enterLoginDetails();
-		
+
 		// Assert all soft assertions
 		softAssert.assertAll();
 	}
@@ -54,7 +53,8 @@ public class SampleTests extends BaseTest {
 		softAssert = new SoftAssert();
 
 		// Assert that "Option 1" is the default selected value
-		softAssert.assertEquals(homePage.defaultSelectedValue(), "Option 1", "Default selected value does not match with \"Option 1\".");
+		softAssert.assertEquals(homePage.defaultSelectedValue(), "Option 1",
+				"Default selected value does not match with \"Option 1\".");
 
 		// Select "Option 3" from the select list
 		homePage.selectDropDownOpt();

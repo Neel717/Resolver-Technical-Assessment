@@ -38,7 +38,7 @@ public class HomePage extends AbstractComponent {
 	@FindBy(xpath = "//div[@id='test-4-div']/button[1]")
 	WebElement buttonOne;
 
-	@FindBy(xpath = "//div[@id='test-4-div']/button[2]")
+	@FindBy(xpath = "//div[@id='test-4-div']/button[@class='btn btn-lg btn-secondary']")
 	WebElement buttonTwo;
 
 	@FindBy(xpath = "//div[@id='test5-alert']/following-sibling::button")

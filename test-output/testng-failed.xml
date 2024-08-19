@@ -8,10 +8,10 @@
     <classes>
       <class name="com.resolver.tests.SampleTests">
         <methods>
-          <include name="TestThree"/>
+          <include name="TestTwo"/>
+          <include name="TestFour"/>
+          <include name="TestSix"/>
           <include name="tearDown"/>
-          <include name="TestFive"/>
-          <include name="TestOne"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- com.resolver.tests.SampleTests -->

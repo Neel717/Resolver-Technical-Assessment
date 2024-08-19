@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="tests" name="Suite">
+<suite name="Suite">
 	<listeners>
 		<listener class-name="com.resolver.commonBase.Listeners"></listener>
 	</listeners>
-	<test thread-count="5" name="Sample Tests">
+	<test name="Sample Tests">
 		<classes>
 			<class name="com.resolver.tests.SampleTests" />
 		</classes>
