@@ -1,9 +1,9 @@
-IDE Used: Eclipse IDE for Java Developers
+IDE Used: Eclipse IDE for Java Developers   
 Version: Photon Release (4.8.0)
 
-java version "22.0.2" 2024-07-16
-Java(TM) SE Runtime Environment (build 22.0.2+9-70)
-Java HotSpot(TM) 64-Bit Server VM (build 22.0.2+9-70, mixed mode, sharing)
+java version "22.0.2" 2024-07-16  
+Java(TM) SE Runtime Environment (build 22.0.2+9-70)  
+Java HotSpot(TM) 64-Bit Server VM (build 22.0.2+9-70, mixed mode, sharing)  
 
 --- This Maven project consists of TDD framework which is used to test the given scenario.
 
