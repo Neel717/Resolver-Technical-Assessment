@@ -1,5 +1,6 @@
 package com.resolver.tests;
 
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -21,7 +22,10 @@ public class SampleTests extends BaseTest {
 
 		// Assert that Sign in button is present
 		softAssert.assertEquals(homePage.loginBtnIsVisible(), true, "Sign in Button not present.");
-
+		
+		//Enter in an email address and password combination into the respective fields
+		homePage.enterLoginDetails();
+		
 		// Assert all soft assertions
 		softAssert.assertAll();
 	}

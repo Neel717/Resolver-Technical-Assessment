@@ -13,7 +13,6 @@ public class HomePage extends AbstractComponent {
 
 	WebDriver driver;
 
-
 	public HomePage(WebDriver driver) {
 		super(driver);
 		// initialization
@@ -67,6 +66,11 @@ public class HomePage extends AbstractComponent {
 
 	public boolean loginBtnIsVisible() {
 		return loginBtn.isDisplayed() ? true : false;
+	}
+
+	public void enterLoginDetails() {
+		emailInput.sendKeys("abc123@gmail.com");
+		passwordInput.sendKeys("1a2b3c4d!");
 	}
 
 	public String defaultSelectedValue() {
