@@ -16,19 +16,19 @@ The framework consists of 2 main folders namely, src/main/java and src/test/java
 
 > src/main/java consists of 3 packages, namely:
 
-1) com.resolver.AbstractComponent: This hold the abstract component class which basically is a glue for all our Page classes. We can use this class to store the commonality in all our Page object classes. We can also store functionalities to traverse from one WebPage to another.
+1) com.resolver.AbstractComponent: This holds the abstract component class which basically is a glue for all our Page classes. We can use this class to store the commonality in all our Page object classes. We can also store functionalities to traverse from one WebPage to another.
 
 2) com.resolver.pages: I have used Page Object Model design pattern to correspond each WebPage with a Page class, which are stored under this package.
 
-3) com.resolver.resources: It contains an ExtentReporter Class which is a key point for our reporting mechanism and hold all the relevant code for it. There is also a config.properties file which can hold our environment specific parameters such as URL's, app-tokens, data-base connection strings, browser-names, etc.
+3) com.resolver.resources: It contains an ExtentReporter Class which is a key point for our reporting mechanism and holds all the relevant code for it. There is also a config.properties file which can hold our environment specific parameters such as URL's, app-tokens, data-base connection strings, browser-names, etc.
 
 
 
 > src/test/java consists of 2 packages, namely:
 
-1) com.resolver.commonBase: This package consister of BaseTest, Listeners and Retry classes.
+1) com.resolver.commonBase: This package consists of BaseTest, Listeners and Retry classes.
 a) The BaseTest serves as a foundational class that provides common setup (browser initialization), teardown (close and clean-up after each test run) and utility functions (getScreenshot) for our framework.
-b) The Listeners class handles tasks such as Event Tacking, Custom Logging, Error Handling and Test Reporting.
+b) The Listeners class handles tasks such as Event Tracking, Custom Logging, Error Handling and Test Reporting.
 c) The Retry class is used to automatically rerun failed tests a specified number of times before marking them as failed.
  
 2) com.resolver.tests: This package can hold all of our Tests.
